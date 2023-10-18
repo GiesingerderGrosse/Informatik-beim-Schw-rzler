@@ -8,6 +8,14 @@ public class Main {
         //float - kommazahl
         //double - kommazahl(großßßßßßßßßßßßß)
         //boolean - true/false
+        //char - zeichen
+        //String - zeichenkette
+
+        int number = 7;
+        String name = "Andi";
+
+        System.out.println(name);
+        System.out.println(number);
 
     }
 
