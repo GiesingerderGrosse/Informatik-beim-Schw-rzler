@@ -5,12 +5,25 @@ import java.util.Random;
 public class ControlStructurs3 {
     public static void main(String[] args) {
 
-        int Summe = 2;
-        for (int i = 0; i<=1000; i=i+2){
+        Random random = new Random();
+        int Summe = 0;
+        boolean Stopp = false;
 
-        Summe = Summe + i;
 
+    while (!Stopp){
+
+        int randomValue = random.nextInt(20);
+        randomValue = randomValue + 10;
+
+        if (randomValue == 15){
+            Stopp = true;
+        }else if (randomValue == 25){
+            Stopp = true;
+        }else{
+            Summe = Summe + randomValue;
         }
+
+    }
         System.out.println(Summe);
 
 
