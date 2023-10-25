@@ -4,39 +4,16 @@ import java.util.Random;
 
 public class ControlStructurs3 {
     public static void main(String[] args) {
-        Random random = new Random();
-        int randomNumber = random.nextInt(5);
-        randomNumber = randomNumber + 5;
 
-        switch (randomNumber){
-            case 10:
-                System.out.println("Ten");
-                break;
+        int Summe = 0;
+        for (int i = 0; i<=100; i++){
 
-            case 9:
-                System.out.println("Nine");
-                break;
+        Summe = Summe + i;
 
-            case 8:
-                System.out.println("Eight");
-                break;
-
-            case 7:
-                System.out.println("Seven");
-                break;
-
-            case 6:
-                System.out.println("Six");
-                break;
-
-            case 5:
-                System.out.println("Five");
-                break;
-
-            default:
-                System.out.println("other value");
-                break;
         }
+        System.out.println(Summe);
+
+
 
         // Erstelle eine Zufallszahl zwischen 5 und 10
 
