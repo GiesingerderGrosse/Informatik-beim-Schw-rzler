@@ -6,18 +6,31 @@ public class ControlStructurs3 {
     public static void main(String[] args) {
         Random random = new Random();
         int randomNumber = random.nextInt(5);
+        randomNumber = randomNumber + 5;
 
         switch (randomNumber){
-            case 0:
-                System.out.println("is 0");
+            case 10:
+                System.out.println("Ten");
                 break;
 
-            case 1:
-                System.out.println("is 1");
+            case 9:
+                System.out.println("Nine");
                 break;
 
-            case 2:
-                System.out.println("is 2");
+            case 8:
+                System.out.println("Eight");
+                break;
+
+            case 7:
+                System.out.println("Seven");
+                break;
+
+            case 6:
+                System.out.println("Six");
+                break;
+
+            case 5:
+                System.out.println("Five");
                 break;
 
             default:
