@@ -42,8 +42,7 @@ public class ControlStructurs3 {
                     }
                     break;
                 } case 3:{
-                    System.out.println("Ihr aktueller Kontostand beträgt:");
-                    System.out.println(Kontostand);
+                    System.out.println("Ihr aktueller Kontostand beträgt: " + Kontostand +" €");
                     break;
                 } case 4:{
                     System.out.println("Programm Beendet.");
