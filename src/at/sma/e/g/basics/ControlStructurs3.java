@@ -10,6 +10,7 @@ public class ControlStructurs3 {
 
         Scanner scanner = new Scanner(System.in);
         int Kontostand = 0;
+        int es = 0;
         boolean isFinished = true;
 
         while (isFinished){
