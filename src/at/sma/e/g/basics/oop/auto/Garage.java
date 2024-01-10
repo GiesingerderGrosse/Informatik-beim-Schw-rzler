@@ -67,5 +67,11 @@ public class Garage {
         }else{
             System.out.println("Upps, Garage keinen Platz mehr frei, versuche es später nocheinmal!!!!");
         }
+
+        public int getGesamtFahrzeugeUebereinander(){
+            int wert = 0;
+
+            return wert;
+        }
     }
 }
