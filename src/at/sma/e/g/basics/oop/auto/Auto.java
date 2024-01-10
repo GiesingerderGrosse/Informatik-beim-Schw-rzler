@@ -4,17 +4,27 @@ public class Auto {
     private int ileistung;
     private String sFarbe;
     private int iAnzahlRaeders;
-
-    public Auto(int ileistung, String sFarbe, int iAnzahlRaeders) {
+    private int fahrzeughoehe;
+    public Auto(int ileistung, String sFarbe, int iAnzahlRaeders, int fahrzeughoehe) {
         this.ileistung = ileistung;
         this.sFarbe = sFarbe;
         this.iAnzahlRaeders = iAnzahlRaeders;
+        this.fahrzeughoehe = fahrzeughoehe;
     }
 
     public Auto() {
         this.ileistung =0;
         this.sFarbe ="keine Angabe";
         this.iAnzahlRaeders =0;
+        this.fahrzeughoehe = 0;
+    }
+
+    public int getFahrzeughoehe() {
+        return fahrzeughoehe;
+    }
+
+    public void setFahrzeughoehe(int fahrzeughoehe) {
+        this.fahrzeughoehe = fahrzeughoehe;
     }
 
     public int getiAnzahlRaeders() {
@@ -44,6 +54,7 @@ public class Auto {
     public String getInfoAuto(){
         return "Auto Farbe ist " + this.getsFarbe() +
                 " mit Leistung " + this.getIleistung() +
-                " und " + this.getiAnzahlRaeders() + " Räder.";
+                " und " + this.getiAnzahlRaeders() + " Räder." +
+                "Fahrzeughöhe beträgt " + this.getFahrzeughoehe();
     }
 }
