@@ -68,10 +68,39 @@ public class Garage {
             System.out.println("Upps, Garage keinen Platz mehr frei, versuche es später nocheinmal!!!!");
         }
 
-        public int getGesamtFahrzeugeUebereinander(){
-            int wert = 0;
+    }
 
-            return wert;
+    public int getGesamtFahrzeugeUebereinander(){
+        int wert = 0;
+        for (Auto a : autoListe) {
+            wert += a.getFahrzeughoehe();
+        }
+        return wert;
+    }
+
+    public void getAutoFarbe(String farbe) {
+        System.out.println("Folgende Auto mit Farbe " + farbe + " sind in der Liste:");
+        for (Auto a : autoListe){
+            if (a.getsFarbe().equals(farbe)){
+                System.out.println(a.getInfoAuto());
+            }
         }
     }
+
+    public void getAutoLeistung(int lmin, int lmax){
+        if(lmin>lmax){
+            int ch = lmax;
+            lmin = lmax;
+            lmax = ch;
+        }
+        System.out.println("Folgende Auto mit Leistung von " + lmin + " bis max " + lmax + " sind in der Liste:");
+        for(Auto a : autoListe){
+            if(a.getIleistung()>lmin && a.getIleistung() < lmax){
+                System.out.println(a.getInfoAuto());
+            }
+        }
+
+    }
 }
+    //Wir suchen nach Autos mit Farbe x
+    //Suche Autos mit Leistung von, bis
