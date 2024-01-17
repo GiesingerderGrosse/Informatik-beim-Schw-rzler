@@ -99,7 +99,19 @@ public class Garage {
                 System.out.println(a.getInfoAuto());
             }
         }
+    }
 
+
+    public void loescheAutosFarbe(String farbe) {
+        //aus der Liste entfernen
+        int counter =0;
+        for (int i = autoListe.size() - 1; i >= 0; i--) {
+            if(autoListe.get(i).getsFarbe().equals(farbe)) {
+                autoListe.remove(i);
+                counter++;
+            }
+        }
+        System.out.println("Es wurden " + counter + " " + farbe + " Autos gelöscht.");
     }
 }
     //Wir suchen nach Autos mit Farbe x
