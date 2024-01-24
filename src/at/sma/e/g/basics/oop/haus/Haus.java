@@ -52,10 +52,10 @@ public class Haus {
         this.iGartenflaeche = iGartenflaeche;
     }
 
-    public String getInfoAuto(){
+    public String getInfoHaus(){
         return "Das Haus besitzt die Hausnummer " + this.getiHausnummer() +
                 " mit " + this.getiFenster() +
-                ", die Hausfarbe ist " + this.getsHausfarbe() +
+                " Fenstern, die Hausfarbe ist " + this.getsHausfarbe() +
                 " und der Garten ist " + this.getiGartenflaeche() +
                 " Quadratmeter gross.";
     }
