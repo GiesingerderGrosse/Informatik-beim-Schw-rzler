@@ -59,4 +59,9 @@ public class Haus {
                 " und der Garten ist " + this.getiGartenflaeche() +
                 " Quadratmeter gross.";
     }
-}
+
+    public void hausnummerSuche(int iiHausnummer){
+        if (this.iHausnummer == iiHausnummer)
+            System.out.println("Das Haus hat die Daten: "+ this.getInfoHaus());
+        }
+    }

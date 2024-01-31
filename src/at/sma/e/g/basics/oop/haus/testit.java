@@ -36,20 +36,14 @@ public class testit {
 
         }
         for(Haus a : aHausListe){
+
             System.out.println(a.getInfoHaus());
+            a.hausnummerSuche(5);
         }
 
-        System.out.println("Sie können eine gewünschte Hausnummer eingeben, um das Haus zu finden");
-        int Auswahl = Integer.parseInt(scanner.next());
-
-        System.out.println("Hier ist das gewünschte Haus: ");
 
 
-        for(Haus a : aHausListe){
 
-            haus.setiHausnummer(Auswahl);
-            System.out.println(a.getInfoHaus());
-        }
         //Suchfunktion funktioniert noch nicht
     }
 }
