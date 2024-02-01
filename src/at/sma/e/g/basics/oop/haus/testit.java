@@ -40,10 +40,5 @@ public class testit {
             System.out.println(a.getInfoHaus());
             a.hausnummerSuche(5);
         }
-
-
-
-
-        //Suchfunktion funktioniert noch nicht
     }
 }
